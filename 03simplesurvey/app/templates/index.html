@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<form  method="post" action="{{ url_for('registration') }}">
+    
+  <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="fname" placeholder="Enter Name">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lname" placeholder="Enter Last Name">
+  
+    <input type="radio" name="gender" value="male" checked> Male </input><br>
+    <input type="radio" name="gender" value="female"> Female</input><br>
+    <input type="radio" name="gender" value="other"> Other</input>  
+  
+    
+   <select name ="drive">
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="mercedes">Mercedes</option>
+     <option value="audi">Audi</option>
+   </select> 
+   
+   <input type="submit" value="submit">
+  </form> 
+  
+</body>
+</html>

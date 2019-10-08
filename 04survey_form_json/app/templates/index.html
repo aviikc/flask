@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+<div class="myform">
+    <form action="{{ url_for('registration') }}" method="post">
+        <div>
+            <input type="radio" name="user_type" id="user_type_button" value="Student">Student</input>
+            <input type="radio" name="user_type" id="user_type_button" value="faculty">Faculty</input>
+        </div>
+        <div class="nameArea">
+            <span><label for="fName">First Name</label>
+                <input id="fName" type="text" name="fname" placeholder="First Name">
+            </span>
+            <span><label for="lName">Last Name</label>
+                <input id="lName" type="text" name="lname" placeholder="Last Name">
+            </span>
+            <label for="emailIn">Email</label>
+            <input id="emailIn" type="email" name="email" placeholder="Email"></div>
+            <label for="studentId">ID </label>
+            <input id="studentId" type="text" name="student_id" placeholder="ID String"></br>
+
+            <input name="submit" type="submit" value="Send"/>
+        </div>
+
+    </form>
+</div>
+{% endblock %}
