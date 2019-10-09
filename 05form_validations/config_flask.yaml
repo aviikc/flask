@@ -1,0 +1,10 @@
+# Flask Configuration
+
+COMMON: &common 
+  DEBUG: False
+  Port: 5000
+
+DEVELOPEMENT: &development
+  <<: *common
+  DEBUG: True
+  SECRET_KEY: "youwillneverguess"
